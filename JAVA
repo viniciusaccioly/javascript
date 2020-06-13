@@ -1,0 +1,72 @@
+function juiz (j1,j2) {
+    if (j1 == "pedra" && j2 == "tesoura"){
+        return j1 + " ganhou" 
+        }
+     if (j1 == "tesoura" && j2 == "pedra"){
+            return j2 + " ganhou" 
+            }
+
+    if (j1 == "papel" && j2 == "pedra"){
+                return j1 + " ganhou" 
+                }
+     if (j1 == "pedra" && j2 == "papel"){
+            return j2 + " ganhou" 
+            }
+}
+
+var jogada1 = "pedra"
+var jogada2 = "tesoura"
+
+var resulado = juiz(jogada1, jogada2)
+console.log(resultado)
+
+
+var idade = prompt("insira um valor")
+
+
+------------------------------------------------
+AJ-Aula 08 [ metodos ]
+#console.log(Math )
+
+var Livro = {
+	titulo: "O mundo de Sophia",
+	autor: "Jostein Gaarder",
+	ler() {
+		console.log("Lendo Livro")
+	}	
+}
+console.log(Livro)
+Livro.ler()
+
+
+
+
+______________________________________________
+var dadao = {
+	lados: 6,
+	rolar(faces){
+	var numero = this.lados * Math.random()
+	var valor = Math.ceil(numero)
+	retutn
+	}
+	
+
+}
+
+var jogada = dado.rolar(6)
+console.log(jogada)
+
+console.log(6 * Math.random())
+Math.ceil
+
+
+
+var numero = 6 * Math.random()
+var valor = Math.ceil(numero)
+console.log(valor)
+console.log(valor)
+console.log(valor)
+console.log(valor)
+console.log(valor)
+console.log(valor)
+

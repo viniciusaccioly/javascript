@@ -1,0 +1,44 @@
+var Curso = { 
+	nome: "Introduçao a programacao",
+	nivelDificuldade: "Medio",
+	alunos: ["Alisson","Arthur", "Sophia", "Leticia", "Vinicius"],
+
+	matricular(nomeAluno) {
+		this.alunos.push(nomeAluno)
+		console.log(nomeAluno + "matriculado")
+	}
+}
+
+
+
+// Principal
+controle.log(Curso.alunos.length)
+Curso.matricular("Francisco")
+controle.log(Curso.alunos)
+controle.log(Curso.alunos.length)
+
+
+
+var Cachorro = {
+	raca: "Golden Retriever",
+	dono: "Leticia",
+	nome: "Tob",
+	latir() { 
+		console.log(this.nome + " late assim auauauua")
+	}
+}
+
+Cachorro.latir()
+
+
+var Cachorro = {
+        raca: "Maltez";
+        dono: "Sophia",
+        nome: "Rex",
+        latir() { 
+                console.log(this.nome + " late assim au au")
+        }
+}
+
+Cachorro.latir()
+

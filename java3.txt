@@ -1,0 +1,44 @@
+class Aluno {
+	nome = ""
+	idade = 
+	notas = []
+
+	constructor(nomeAluno, idadeAluno){
+		this.nome = nomeAluno
+		this.idade = idadeAluno	
+	}
+	
+	adicionarNota(nota) {
+		this.notas.push(nota)
+	}
+
+	calcluarMedia() {
+		var total = 0
+		var i = 0
+		while (i < this.notas.length) {
+			total = total + this.notas[i]
+		i = i + 1
+		}
+		var media = total / this.notas.length
+		return media
+	}
+
+
+	aprovado() {
+		var media = this.calcularMedia()
+		if (media <5)
+			return "não"
+		return "sim"
+}
+}
+
+var aluno1 = new Aluno("Sophia",12)
+//console.log(aluno1)
+aluno1.adicionarNota(10)
+aluno1.adicionarNota(9)
+//console.log(aluno1)
+var media = aluno1.calcularMedia()
+
+module.export = Aluno
+
+var Aluno = require('./aluno.js') no arquivo index.js
